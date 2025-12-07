@@ -1,0 +1,19 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        {{- if $.Site.Data.brand.logo }}
+        <div class="brand-logo" style="text-align: center; margin-bottom: 1.5rem;">
+            <img src="{{ $.Site.Data.brand.logo }}" alt="{{ $.Site.Data.brand.name }} logo" style="max-width: 200px; height: auto;" />
+        </div>
+        {{- end }}
+        <h1>{{ .Title | default (printf "Welcome to %s" $.Site.Data.brand.name) | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | default $.Site.Data.brand.description | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}
+

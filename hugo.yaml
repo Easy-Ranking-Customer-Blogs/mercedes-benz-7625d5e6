@@ -1,0 +1,116 @@
+baseURL: ""
+languageCode: "en-us"
+title: ""
+theme: papermod
+
+# Pagination
+pagination:
+  pagerSize: 10
+
+# Enable emoji support
+enableEmoji: true
+
+# Enable robots.txt generation
+enableRobotsTXT: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Enable Git info
+enableGitInfo: true
+
+# Taxonomies
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  series: "series"
+
+# Menu
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 10
+    - identifier: "posts"
+      name: "Articles"
+      url: "/posts/"
+      weight: 20
+
+# Params
+params:
+  env: production
+  # Brand values are read from data/brand.yaml
+  # Access via .Site.Data.brand.name, .Site.Data.brand.description, etc.
+  
+  # Description for SEO (fallback to brand description)
+  description: ""  # Will be populated from brand.yaml
+  
+  # Keywords for SEO (fallback to brand keywords)
+  keywords: []  # Will be populated from brand.yaml
+
+  # Social links - RSS for crawlers
+  socialIcons:
+    - name: "rss"
+      url: "/index.xml"
+
+  # Theme settings - optimized for AEO/crawlers
+  defaultTheme: "light"
+  disableThemeToggle: true
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: true
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  # Home page settings
+  homeInfoParams:
+    Title: "Knowledge Base"
+    Content: "Expert insights and comprehensive guides on industry topics."
+
+  # Cover images
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  analytics:
+    google:
+      SiteVerificationTag: "" # Access via .Site.Data.brand.google_site_verification
+      ID: "" # Access via .Site.Data.brand.google_analytics_id
+
+# Outputs
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+  section:
+    - "HTML"
+    - "RSS"
+
+# Markup
+markup:
+  highlight:
+    codeFences: true
+    style: "monokai"
+
+# Privacy
+privacy:
+  googleAnalytics:
+    disable: false
+    anonymizeIP: false
+    respectDoNotTrack: false

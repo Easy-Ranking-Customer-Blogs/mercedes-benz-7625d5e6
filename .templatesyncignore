@@ -1,0 +1,24 @@
+# Template Sync Ignore File
+# Files and directories listed here will not be synced to child repositories
+# This preserves brand-specific customizations
+
+# Brand-specific configuration files
+data/brand.yaml
+hugo.yaml
+
+# Brand-specific content
+content/_index.md
+content/posts/_index.md
+content/posts/
+
+# Brand logos
+static/logo.*
+
+# Build artifacts and cache
+public/
+resources/
+.hugo_build.lock
+
+# Git directory
+.git/
+

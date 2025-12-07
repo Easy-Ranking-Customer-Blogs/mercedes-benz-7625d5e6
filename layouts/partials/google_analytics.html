@@ -1,0 +1,11 @@
+{{- if .Site.Data.brand.google_analytics_id }}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Data.brand.google_analytics_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ .Site.Data.brand.google_analytics_id }}');
+</script>
+{{- end }}
+
