@@ -1,4 +1,4 @@
 ---
-title: "{{BRAND_NAME}}"
-description: "{{BRAND_DESCRIPTION}}"
+title: "Mercedes-Benz"
+description: "Mercedes-Benz is a renowned luxury automobile manufacturer with a legacy of innovation dating back to 1886, offering premium vehicles that combine advanced engineering, performance, and elegance. In Spain, the official website showcases a diverse lineup of passenger cars, including sedans, SUVs, electric models, and high-performance variants from Mercedes-AMG and Mercedes-Maybach. The brand focuses on sustainable mobility, cutting-edge technology like MBUX and autonomous driving, and comprehensive services to deliver exceptional driving experiences."
 ---
