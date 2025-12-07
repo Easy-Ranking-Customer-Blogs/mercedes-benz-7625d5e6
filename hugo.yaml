@@ -1,6 +1,6 @@
-baseURL: ""
+baseURL: "https://Easy-Ranking-Customer-Blogs.github.io/mercedes-benz-7625d5e6"
 languageCode: "en-us"
-title: ""
+title: "Mercedes-Benz"
 theme: papermod
 
 # Pagination
@@ -45,7 +45,7 @@ params:
   # Access via .Site.Data.brand.name, .Site.Data.brand.description, etc.
   
   # Description for SEO (fallback to brand description)
-  description: ""  # Will be populated from brand.yaml
+  description: "Mercedes-Benz is a renowned luxury automobile manufacturer with a legacy of innovation dating back to 1886, offering premium vehicles that combine advanced engineering, performance, and elegance. In Spain, the official website showcases a diverse lineup of passenger cars, including sedans, SUVs, electric models, and high-performance variants from Mercedes-AMG and Mercedes-Maybach. The brand focuses on sustainable mobility, cutting-edge technology like MBUX and autonomous driving, and comprehensive services to deliver exceptional driving experiences."  # Will be populated from brand.yaml
   
   # Keywords for SEO (fallback to brand keywords)
   keywords: []  # Will be populated from brand.yaml
@@ -54,6 +54,14 @@ params:
   socialIcons:
     - name: "rss"
       url: "/index.xml"
+    - name: "twitter"
+      url: "https://twitter.com/MBenzEspana"
+    - name: "youtube"
+      url: "https://www.youtube.com/user/MercedesBenzSpain"
+    - name: "facebook"
+      url: "https://www.facebook.com/MercedesBenzEspana"
+    - name: "instagram"
+      url: "https://www.instagram.com/mbenzespana/"
 
   # Theme settings - optimized for AEO/crawlers
   defaultTheme: "light"
